@@ -16,7 +16,7 @@ app.use('/',userRoutes);
 app.use('/',bookingRoutes);
 
 
-
+//port
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT,()=>{
