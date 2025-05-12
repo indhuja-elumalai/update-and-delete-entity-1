@@ -11,8 +11,11 @@ mongoose.connect(process.env.MONGODB_URI)
 .then(()=>console.log("mongodb connection successful"))
 .catch((err)=>console.log("connection not successful"));
 
+
 app.use('/',userRoutes);
 app.use('/',bookingRoutes);
+
+
 
 const PORT = process.env.PORT || 8000;
 
